@@ -7,8 +7,13 @@ ul {
 }
 .search{
     position: relative;
+    width: 100%;
+}
+.filedInput{
+    max-width: 800px;
 }
 .input{
+    margin-top: 10px;
     height: 54px;
     display: flex;
     align-items: center;
@@ -21,30 +26,29 @@ ul {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    text-decoration-line: underline;
     color: #6a696b;
-    width: 500px;
+    width: 100%;
 }
 .dropdown{
-
+    display: none;
+}
+.open{
+    display: block;
 }
 .dropdown ul{
-    width: 500px;
+    margin-top: 1px;
+    max-width: 800px;
     position: absolute;
     background: #FFFFFF;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
     border-radius: 4px;
-
-
     left: 0;
     right: 0;
     box-shadow: 2px 3px 5px rgba(0,0,0,.2);
 }
 .dropdown ul li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
+    padding: 5px 5px 5px 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -54,4 +58,10 @@ ul {
      background-color: #EEF1F5;
      cursor: pointer;
      transition: .15s background-color ease-in;
+}
+.list{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #6a696b;
 }
